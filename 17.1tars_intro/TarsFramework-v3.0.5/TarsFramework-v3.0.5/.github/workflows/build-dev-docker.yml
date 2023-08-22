@@ -1,0 +1,23 @@
+name: build-dev-docker
+
+on:
+  push:
+    branches: 
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: docker login
+        run: |
+          docker login -u ${{ secrets.name }} -p ${{ secrets.pass }} 
+          env
+      - uses: actions/checkout@v1
+      - name: deploy docker
+        run: |
+          echo $GITHUB_SHA
+          env
+          rm -rf TarsDocker
+          git clone https://github.com/TarsCloud/TarsDocker
+          cd TarsDocker/framework
+          ./build-docker.sh master master latest dev

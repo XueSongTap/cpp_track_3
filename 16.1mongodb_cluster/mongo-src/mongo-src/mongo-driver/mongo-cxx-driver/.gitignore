@@ -1,0 +1,11 @@
+# Directories that are generated
+/tags
+cmake-build*
+
+# Filetypes
+*~
+*.pyc
+*.swp
+
+# OSX
+.DS_Store

@@ -1,0 +1,40 @@
+<tars>
+    <application>
+        <client>
+            #缺省3s(毫秒)
+            sync-invoke-timeout = 6000
+            asyncthread=3
+        </client>
+        <server>
+            #关闭服务时等待时间
+            deactivating-timeout = 3000
+        </server>
+    </application>
+
+    <node>
+        registryObj = tars.tarsregistry.RegistryObj
+        cmd_white_list_ip=
+        <keepalive>
+            #业务心跳超时时间(s)
+            heartTimeout    = 45
+
+            #监控server状态间隔时间(s)
+            monitorInterval = 3
+
+            #跟主控/本地cache同步服务状态间隔时间(s)
+            synStatInterval = 60
+        </keepalive>
+
+        <hashmap>
+            file            =serversCache.dat
+            minBlock        =500
+            maxBlock        =500
+            factor          =1
+            size            =10M
+        </hashmap>
+        <container>
+            socket = /var/run/docker.sock
+            timeout = 300
+        </container>
+    </node>
+</tars>

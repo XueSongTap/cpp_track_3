@@ -1,0 +1,64 @@
+<tars>
+  <application>
+      #enable set
+      enableset=${enableset}
+      #SET name: .(mtt.s.1)
+      setdivision=${setdivision}
+      <client>
+        #registry address
+        locator =${locator}
+        #sync invoke timeout(millseconds)
+        sync-invoke-timeout = 3000
+        #async invoke timeout (millseconds)
+        async-invoke-timeout =5000
+        #refresh endpoint interval(millseconds)
+        refresh-endpoint-interval = 60000
+        #report to stat[optional]
+        stat      = tars.tarsstat.StatObj
+        #report property[optional]
+        property          = tars.tarsproperty.PropertyObj
+        #report time interval (millseconds)
+        report-interval      = 60000
+        #callback async thread num
+        asyncthread    = ${asyncthread}
+        #module name
+        modulename    = ${modulename}
+      </client>
+
+      <server>
+        #app name
+        app    = ${app}
+        #server name
+        server  = ${server}
+        #local ip
+        localip  = ${localip}
+        #local endpoint, for tars-node comunication(optional)
+        local  = ${local}
+        #server base path
+        basepath = ${basepath}
+        #server data path
+        datapath = ${datapath}
+        #log path
+        logpath  = ${logpath}
+        #roll log size
+        logsize = 10M
+        #roll log num
+        lognum = 10
+        #roll log level
+        logLevel=DEBUG
+        #config obj[optional]
+        config  = tars.tarsconfig.ConfigObj
+        #notify obj[optional]
+        notify  = tars.tarsnotify.NotifyObj
+        #remote log[optional]
+        log = tars.tarslog.LogObj
+        #tarsnode close server waiting time
+        deactivating-timeout = 3000
+        #tarsnode start server waiting time
+        activating-timeout = 10000
+
+    </server>
+  </application>
+</tars>
+
+

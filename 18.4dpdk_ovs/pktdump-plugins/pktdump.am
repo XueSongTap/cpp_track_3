@@ -1,0 +1,10 @@
+
+vppplugins_LTLIBRARIES += pktdump_plugin.la
+
+pktdump_plugin_la_SOURCES = \
+	pktdump/pktdump.c	\
+	pktdump/pktdump_node.c	
+
+nobase_apiinclude_HEADERS	+=	\
+	pktdump/pktdump.h
+

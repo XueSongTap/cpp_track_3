@@ -1,0 +1,18 @@
+<tars>
+  <application>
+
+      <client>
+      </client>
+
+      <server>
+        opencoroutine = 0
+        coroutinememsize = 1G
+        coroutinestack = 128K
+        closecout = 0
+        #net thread
+        netthread=1
+      </server>
+  </application>
+</tars>
+
+

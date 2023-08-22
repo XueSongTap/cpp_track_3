@@ -1,0 +1,13 @@
+./src/dnsperf -d src/test/datafile -s 192.168.232.128 -c10000 -Q10000 -l60
+
+set int ip address TenGigabitEthernet19/0/1 10.10.10.2/24
+set int ip address TenGigabitEthernet19/0/3 10.10.11.2/24
+set int state TenGigabitEthernet19/0/1 up
+set int state TenGigabitEthernet19/0/3 up
+set ip neighbor TenGigabitEthernet19/0/1 10.10.10.3 e4:43:4b:2e:b1:d1
+set ip neighbor TenGigabitEthernet19/0/3 10.10.11.3 e4:43:4b:2e:b1:d3 
+
+
+show plugin  
+
+

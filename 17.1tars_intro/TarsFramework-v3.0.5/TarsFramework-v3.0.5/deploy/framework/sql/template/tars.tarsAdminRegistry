@@ -1,0 +1,32 @@
+<tars>
+	<objname>
+		AdminRegObjName=tars.tarsAdminRegistry.AdminRegObj
+		RegistryObjName=tars.tarsregistry.RegistryObj
+		patchServerObj=tars.tarspatch.PatchObj
+	</objname>
+	<nodeinfo>
+		defaultTemplate=tars.tarsnode
+		sync_node_timeout=4000
+	</nodeinfo>
+	<reap>
+		updateHeartInterval=15
+		registryTimeout=150
+	</reap>
+    <patch>
+        #call tarspatch server timeout(ms)
+        patch_timeout = 30000
+        #patch history
+        patchHistory=200
+        #path wait timeout(s)
+        patch_wait_timeout = 300
+    </patch>
+    <db_reserve>
+        #stat reserve time(day)
+        stat_reserve_time = 31
+        #stat reserve time(day)
+        property_reserve_time = 31
+    </db_reserve>
+    <container>
+        socket = /var/run/docker.sock
+    </container>
+</tars>

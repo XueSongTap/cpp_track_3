@@ -1,0 +1,37 @@
+mongo-cxx-driver (3.6.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop A. Jesse Jiryu Davis as uploader
+
+ -- Roberto C. Sanchez <roberto@connexer.com>  Mon, 19 Apr 2021 13:37:00 -0400
+
+mongo-cxx-driver (3.6.2-1) experimental; urgency=medium
+
+  * New upstream release
+  * Implement build profile: pkg.mongo-cxx-driver.mnmlstc
+    + the build profile allows interested users to rebuild with the
+      MNMLSTC/core C++17 polyfill instead of Boost
+    + consult README.Debian for details
+  * Update to Standards-Version 4.5.1 (no changes)
+
+ -- Roberto C. Sanchez <roberto@connexer.com>  Tue, 01 Dec 2020 14:05:45 -0500
+
+mongo-cxx-driver (3.6.1-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Roberto C. Sanchez <roberto@connexer.com>  Wed, 04 Nov 2020 08:56:23 -0500
+
+mongo-cxx-driver (3.6.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * Bump dependency on libmongoc-dev
+  * Update to Standards-Version 4.5.0 (no changes)
+
+ -- Roberto C. Sanchez <roberto@connexer.com>  Fri, 31 Jul 2020 19:59:35 -0400
+
+mongo-cxx-driver (3.4.0-1) experimental; urgency=low
+
+  * Initial release (Closes: #914573)
+
+ -- Roberto C. Sanchez <roberto@connexer.com>  Tue, 29 Jan 2019 14:49:13 -0500

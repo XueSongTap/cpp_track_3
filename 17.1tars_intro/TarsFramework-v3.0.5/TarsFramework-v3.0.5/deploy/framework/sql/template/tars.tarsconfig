@@ -1,0 +1,7 @@
+<tars>
+  <application>
+    <server>
+        log    = tars.tarslog.LogObj
+    </server>
+  </application>
+</tars>
